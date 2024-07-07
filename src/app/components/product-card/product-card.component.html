@@ -1,0 +1,23 @@
+<div class="product-card cursor-pointer mb-2 fade-in">
+  <div class="rounded-3 p-2 mb-3 mb-md-4 bg-white">
+    <div class="position-relative pb-1">
+      <img
+        loading="lazy"
+        alt="Cropped Faux leather Jacket"
+        class="w-100 object-fit-cover"
+        [src]="product.url"
+      />
+    </div>
+    <div class="d-flex flex-column gap-2 my-2 position-relative">
+      <div class="rrp-tag">RRP {{ product.retailPrice }}</div>
+      <div class="product-text">
+        <span class="primary-color highlighted">{{ product.brand }}</span>
+        {{ product.name }}
+      </div>
+      <div class="product-item-text">Size {{ product.size }}</div>
+      <div class="product-item-text">
+        {{ product.rentalPrice | currency : "GBP" : "symbol" }} Rental
+      </div>
+    </div>
+  </div>
+</div>

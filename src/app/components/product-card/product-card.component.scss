@@ -1,0 +1,25 @@
+@import "./../../../assets/styles/_variables.scss";
+@import "./../../../assets/styles/_typhography.scss";
+@import "./../../../assets/styles/_mixins.scss";
+
+.product-card {
+  transition: transform 0.3s ease;
+  :hover {
+    cursor: pointer;
+  }
+}
+
+.product-text {
+  @include product-text;
+  &.span {
+    color: #a8917f;
+  }
+}
+
+.product-item-text {
+  @include product-item-text;
+}
+
+.rrp-tag {
+  @include price-text;
+}
