@@ -3,7 +3,7 @@
 @import "assets/styles/_typhography.scss";
 @import "assets/styles/_mixins.scss";
 
-body {
-  font-family: $font-family;
-  background-color: red;
+ body {
+  font-family: $font-family !important;
+  background-color: #f4f4f4 !important;
 }

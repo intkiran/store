@@ -4,6 +4,8 @@
 
 .product-card {
   transition: transform 0.3s ease;
+  background-color: #f4f4f4 !important;
+
   :hover {
     cursor: pointer;
   }
@@ -11,7 +13,7 @@
 
 .product-text {
   @include product-text;
-  &.span {
+  & span {
     color: #a8917f;
   }
 }
